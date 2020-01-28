@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>A Responsive Survey Form</title>
+        <link rel="stylesheet" href="form.css">
+        <script>
+            alert("This is the second page");
+        </script>
+
+	</head>
+	<body>
+		<h1 align = "center">Form </h1>
+<div class="container">
+  <p id="description">Please fill the form and submit</p>
+  <form id="survey-form">
+    <ul class="flex-outer">
+      <li>
+        <label for="name" id="name-label">*Name </label>
+        <input type="text" id="name" class="input-feild" placeholder="Enter Your Name" required>
+      </li>
+      <li>
+        <label for="email" id="email-label">*Email </label>
+        <input type="email" id="email" class="input-feild" placeholder="Enter Your Mail" required>
+      </li>
+      <li>
+        <label for="number" id="number-label">*Age </label>
+        <input type="number" id="number" placeholder="Enter Your Age" min="15" max="100" required>
+      </li>
+      
+       <li>
+        <label for="number" id="numberlabel">What is your gender? </label>
+        <select id="dropdown">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Others</option>
+      </select>
+      </li>
+      
+      <li>
+        <p>What do you like most?</p>
+        <ul class="flex-inner" id="radiobutton">
+          <li>
+            <input type="radio" id="Challenges" name="like" value="Challenges">
+            <label for="Challenges">Challenges</label>
+          </li>
+          <li>
+            <input type="radio" id="projects" name="like" value="projects">
+            <label for="projects">Projects</label>
+          </li>
+          <li>
+            <input type="radio" id="quiz" name="like" value="quiz">
+            <label for="quiz">Quiz</label>
+          </li>
+          <li>
+            <input type="radio" id="Open Source" name="like" value="Open Source">
+            <label for="Open Source">Open Source</label>
+          </li>
+        </ul>
+      </li>
+      
+      <li>
+        <p>Choose Your Favourite</p>
+        <ul class="flex-inner" id="checkbox">
+          <li>
+            <input type="checkbox" id="html" name="language" value="html">
+            <label for="html">html</label>
+          </li>
+          <li>
+            <input type="checkbox" id="css" name="language" value="css"> 
+            <label for="css">css</label>
+            </li>
+          <li>
+            <input type="checkbox" id="js" name="language" value="js">  
+            <label for="js">js</label>
+          </li>
+          
+      </ul> 
+      </li>
+      
+      <li>
+         <label for="textArea">Any Comments or Suggestions?</label>
+        <textarea id="textArea" rows="4" cols="50"></textarea>
+      </li>
+      
+      <li>
+        <button id="submit" type="submit">Submit</button>
+      </li>
+    </ul>
+  </form>
+</div>
+<a href="trial.html">PAGE 1</a>
+	</body>
+</html>

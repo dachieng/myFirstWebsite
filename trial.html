@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Dorcas</title>
+    <script>
+        alert("This is the first page");
+    </script>
+</head>
+<body>
+    
+    <header >
+        <div id ="header">
+        <h1>My Profile</h1>
+         <a href="#Personal-Info">Personal</a>
+         <a href="#Social">Social</a>
+         <a href="#Objectives">Facts</a>
+        </div>
+    </header>
+    <marquee><b>Welcome To My Web Page</b></marquee>
+    <div class="container">
+<section>
+    <div id = "Personal-Info" class="columns">
+    <h2> <span>Personal Information</span></h2>
+    <ul> <b>
+            <li>NAME : OLOO DORCAS ACHIENG.</li>
+            <li>DATE OF BIRTH : 31st DECEMBER 1999.</li>
+            <li>GENDER : FEMALE.</li>
+            <li>MARITAL STATUS : SINGLE</li>
+            <li>NATIONALITY : KENYAN</li>
+            <li>RELIGION : CHRISTIANITY.</li>
+            <li>LANGUAGES : ENGLIISH , KISWAHILI.</li>
+            <li>E-mail : oloodorcas99@gmail.com</li>
+            <li>MOBILE NUMBER : 0790921582</li>
+            </b>
+        </ul>
+        <br>
+        <h2><span>Educational Background</span></h2>
+        <li>2018-     : JKUAT , BSC Computer Science</li>
+        <li>2014-2017 : Ambassador Girls High School</li>
+        <li>2006-2013 : St John Primary School</li>
+       
+        <br>
+    <h2><span>Roles</span></h2>
+    <li>Academic Prefect</li>
+    <li>Peer Chancellor</li>
+    <br>
+    
+<h2><span>Skills</span></h2>
+<ul>
+    <li>
+        HTML <br> <progress min = "0" max="100" value = "80"></progress>
+    </li>
+    <li>
+        JAVA <br> <progress min = "0" max="100" value = "40"></progress>
+    </li>
+    <li>
+        PYTHON <br> <progress min = "0" max="100" value = "30"></progress>
+    </li>
+</ul>
+<br>
+<a href="#Objectives">read on contacts</a><br>
+<a href="#Social">read on social links</a>
+</div>
+
+</section>
+<br>
+<section>
+    
+    <div id = "Objectives" class="columns">
+    <h2><span>About Me</span></h2>
+    <p> 
+        
+        Hello! I'm <b><i>Dorcas</i></b> I'm an upcoming software developer.
+        This is my first webpage. I love coding. Learning to code has given me <i>problen solving skills.</i>
+        . It's really have fun, venture and learn along the way.
+    </p>
+    <p>
+        I would also like to venture in Artificial intelligence, Web Development and Android Development sometimes
+        in the future.
+    </p>
+    <p>
+        Bottomline coding is so much fun.
+    </p>
+    <h2><span>Contact Me</span></h2>
+    <form>
+        <input type="text" name="name" placeholder="input name"> <br>
+        <input type="email" name="email" placeholder="input email" ><br>
+        <textarea name="message" placeholder="input message" ></textarea><br>
+        <input type="submit" value="send" class="submit">
+    </form>
+    
+    <b>My Slogan</b>
+    <p>Keep it simple, stupid.</p>
+    
+    <button class="collapsible">Web Development Defination</button>
+    <div class="content">
+        <p>
+        Web development refers to building, creating, and an maintaining websites.
+        It includes aspects such as web design, web publishing, web programming, 
+        and database management. Technically, a web designer only designs website 
+        interfaces using HTML and CSS. A web developer may be involved in designing a website, 
+        but may also write web scripts in languages such as PHP , JS or ASP.
+    </p>
+    </div>
+    <button class="collapsible">Types of Developers </button>
+        <div class="content">
+            <p>
+                This include <b><i>client side</i></b> and <b><i>server-side</i></b> developers. <br>
+                <b>CLIENT SIDE:</b> <br>
+                This is a developer who specializes in the programming of visual user interfaces, 
+                including its aesthetics and layouts. A front-end developer code runs on a web browser,
+                on the computer of the user of the site. <br>
+            </p>
+                <b>SERVER SIDE: </b> <br>
+                <p>
+                        This is a developer who specializes in the design, implementation,
+                         functional core logic, performance and scalability of a piece of software 
+                         or system running on machines that are remote from the end-user.
+                </p>
+            
+        </div>
+
+    </div>
+    
+</section>
+<br>
+<section id="Social" class="columns">
+    <h2><span>WEB...!!</span></h2>
+    <img src="Web.jpg" alt="us" width="350px" height="560px">
+
+    <br>
+    <h2><span>Socia Media Links</span></h2>
+             <a href="mailto:oloodorcas99@gmail.com">
+                <img src="gmail.jpg" alt="Email" width="50px" height="50px">
+            </a>
+            
+               <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">
+                <img src="facebook.jpg" alt="facebook" width="50px" height="50px">
+            </a>
+             
+             <a href="GitHub.com" target="_blank">
+                <img src="GitHub.png" alt="GitHub" width="50px" height="50px">
+            </a>
+             
+        
+            
+</section>
+</div>
+<br>
+
+<footer id="footer">
+        <p>Copyright &copy 2019; My Website</p>
+</footer>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+    <a href="form.html">PAGE 2</a>
+</body>
+</html>
